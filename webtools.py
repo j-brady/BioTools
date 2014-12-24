@@ -5,7 +5,7 @@ from collections import defaultdict
 from matplotlib.ticker import MultipleLocator, FormatStrFormatter
 
 ''' My modules  '''
-from .BioTools import hmoment,plotwheel
+from .BioTools import hmoment,plot_wheel
 
 def Data_URI_mpl(format="png"):
   import io
@@ -29,6 +29,7 @@ def plotWheel(seq,m,scale):
              ,(-np.pi/2,5.0),ha='center',va='center',fontsize=16)
 
   ''' writing data to base64 string '''
+  print("Hello")
   return Data_URI_mpl(format="png")
 
 def plotHydropathy(sequence,window,scale_choices):

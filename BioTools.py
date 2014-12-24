@@ -32,7 +32,7 @@ def sliding_window(sequence,window=19):
   #print(res,seqs)
   return res,seqs
 
-def sliding_window_function(sequence,function,window=19):
+def sliding_window_function(sequence,function,window=19,args=None):
   ''' Performs function over each element of the sliding window '''
   res,seqs = sliding_window(sequence,window)
   result_dict  = dict([(n+1,function(i)) for n,i in enumerate(seqs)])
