@@ -1,3 +1,4 @@
+import numpy as np
 import matplotlib.pyplot as pl
 import matplotlib.patches as mpatches
 from matplotlib.colors import colorConverter
@@ -5,7 +6,8 @@ from collections import defaultdict
 from matplotlib.ticker import MultipleLocator, FormatStrFormatter
 
 ''' My modules  '''
-from .BioTools import hmoment,plot_wheel
+from BioTools import hmoment,plot_wheel,sliding_window_function,clean
+from data_tables import get_scale
 
 def Data_URI_mpl(format="png"):
   import io
@@ -16,8 +18,11 @@ def Data_URI_mpl(format="png"):
   ''' 
   sio = io.BytesIO()
   pl.savefig(sio, format=format)
-  imgStr = base64.encodebytes(sio.getvalue()).decode()
-
+  try:
+    imgStr = base64.encodebytes(sio.getvalue()).decode()
+  except AttributeError:
+    ''' For python2 compatibility '''
+    imgStr = base64.b64encode(sio.getvalue()).decode()
   return imgStr
 
 

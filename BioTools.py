@@ -13,7 +13,7 @@ import numpy as np
 from Bio import SeqIO
 
 ''' My modules '''
-from .data_tables import scale_dict, get_scale
+from data_tables import scale_dict, get_scale
 
 
 ''' General functions '''
