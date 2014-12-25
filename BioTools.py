@@ -32,10 +32,17 @@ def sliding_window(sequence,window=19):
   #print(res,seqs)
   return res,seqs
 
-def sliding_window_function(sequence,function,window=19):
-  ''' Performs function over each element of the sliding window '''
+def sliding_window_function(sequence,function,window=19,**kwargs):
+  ''' Performs function over each element of the sliding window 
+      If the function has kwargs then they can be added to the
+      end of the call.
+  '''
   res,seqs = sliding_window(sequence,window)
-  result_dict  = dict([(n+1,function(i)) for n,i in enumerate(seqs)])
+  if kwargs:
+    result_dict  = dict([(n+1,function(i=i,**kwargs)) for n,i in enumerate(seqs)])
+  else:
+    result_dict  = dict([(n+1,function(i=i)) for n,i in enumerate(seqs)])
+
   return result_dict
 
 ''' Calculate hmoment over sliding window '''
@@ -43,7 +50,6 @@ def sliding_window_hmoment(sequence,window):
   ''' Returns dict containing {resnu:[Hm,H_av,seq]} starting with resnu=1 for the first window'''
   res, seqs = sliding_window(sequence,window)
   HmH  = dict([(n+1,hmoment(i)[-4:-1]) for n,i in enumerate(seqs)])
-  
   return HmH
 
 def sum_scale(sequences,hscale):
