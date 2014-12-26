@@ -41,7 +41,7 @@ Scripts for analysis of <sup>15</sup>N-TRACT data. Fitting and effective correla
         
 	tau_c = tract_tauc.tauc(h_field,two_eta_xy)
         
-h_field = field strength in Hz, two_eta_xy = cross-correlated relaxation rate (2&eta;<sub>xy</sub>) 	
+h_field = field strength in Hz, two_eta_xy = cross-correlated relaxation rate (2&eta;<sub>xy</sub>) (s<sup>-1</sup>) calculated from <sup>15</sup>N-TRACT data. 	
 	
 	mw    = Mw_from_Tauc(r_w,eta,T,tau_c,rho)
 
