@@ -1,6 +1,6 @@
-print ''' Module for manipulating nus schedule lists in the bruker and omega formats '''
-print ''' To use: nus.Omega2Bruk('nuslist1','nuslist2) will output a bruker format nus list 
-for use with hmsIST'''
+print(''' Module for manipulating nus schedule lists in the bruker and omega formats ''')
+print(''' To use: nus.Omega2Bruk('nuslist1','nuslist2) will output a bruker format nus list 
+for use with hmsIST''')
 
 import numpy as np
 import pylab as pl
@@ -14,10 +14,10 @@ def Bruk2Omega1d(nuslist):
   for n,line in enumerate(lines):
      line=line.strip('\n')
      if n!=length:
-       print ('%s,'%line)
+       print('%s,'%line)
        o.write('%s,\n'%line)
      else:
-       print ('%s'%line)
+       print('%s'%line)
        o.write('%s\n'%line)
   o.write('};')
 
@@ -35,7 +35,7 @@ def Omega2Bruk1d(nuslist):
         array.append(int(i))
     except ValueError:
       pass
-  print array
+  print(array)
   o = open('nuslist','w')
 
   for i in array:
@@ -60,7 +60,7 @@ def Omega2Bruk(nuslist1,nuslist2):
         array1.append(int(i))
     except ValueError:
       pass
-  print array1
+  print(array1)
 
   array2=[]
   for line in linesy:
@@ -70,7 +70,7 @@ def Omega2Bruk(nuslist1,nuslist2):
         array2.append(int(i))
     except ValueError:
       pass
-  print array2
+  print(array2)
 
   o1 = open('sched2d','w')
 
@@ -111,15 +111,15 @@ def PlotSched(nuslist):
   a = np.genfromtxt(nuslist)
   t1= a[:,0]
   t2= a[:,1]
-  print len(t1)
-  print len(t2)
+  print(len(t1))
+  print(len(t2))
   
   fig=pl.figure()
   ax =fig.add_subplot(111)
   ax.scatter(t1,t2)
   ax.set_xlabel('t1')
   ax.set_ylabel('t2')
-  print 'saved plot as test.pdf'
+  print('saved plot as test.pdf')
   pl.savefig('test.pdf')  
 
 def MakeLatexTable(nuslist):

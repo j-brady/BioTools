@@ -31,9 +31,9 @@ def viscosity(T): # Temperature is in Kelvin
 def mw_from_tauc(r_w,eta,T,tau_c,rho):
   equation = (3*tau_c*k*T)/(4*pi*eta)
   r = equation**(1/3.0)
-  print 'The effective hydrodynamic radius = %.3f A'%(r*1e10)
+  print('The effective hydrodynamic radius = %.3f A'%(r*1e10))
   m_w = ((r-r_w)**3.0)*4.0*pi*N_a/(3.0*rho)
-  print 'Molecular weight = %.3f kDa'% (m_w/1000.0)
+  print('Molecular weight = %.3f kDa'% (m_w/1000.0))
   return m_w
 
 
@@ -70,4 +70,4 @@ if __name__ == "__main__":
   pl.tick_params(axis='both', which='major', labelsize=16)
   pl.savefig('molecular_weights.pdf')
   ##pl.show()    
-  print viscosity(315)
+  print(viscosity(315))

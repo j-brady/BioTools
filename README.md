@@ -4,6 +4,9 @@ Some scripts for analysis of protein sequences
 
 	def example(test)
 		return test
+## Dependencies
+	pip install numpy matplotlib BioPython
+
 ## data_tables.py
 Contains hydropathy tables.
 

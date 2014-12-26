@@ -1,0 +1,15 @@
+setup.py
+BioTools/BioTools.py
+BioTools/__init__.py
+BioTools/data_tables.py
+BioTools/webtools.py
+BioTools.egg-info/PKG-INFO
+BioTools.egg-info/SOURCES.txt
+BioTools.egg-info/dependency_links.txt
+BioTools.egg-info/requires.txt
+BioTools.egg-info/top_level.txt
+NMR_Tools/__init__.py
+NMR_Tools/nus.py
+NMR_Tools/tract/Mw_from_Tauc.py
+NMR_Tools/tract/__init__.py
+NMR_Tools/tract/tract_tauc.py

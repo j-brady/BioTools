@@ -1,3 +1,5 @@
 BioTools.komodoproject
 test.py
 *.pyc
+build
+dist
