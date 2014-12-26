@@ -21,6 +21,17 @@ NMR Tools
 ## nus.py
 Scripts for converting Bruker NUS sampling schedules to Omega compatible format and vice-versa.
 
+	from NMR_Tools import nus
+	
+	nus.Omega2Bruk('nuslist1','nuslist2') 
+
+will output a bruker format nus list for use with hmsIST
+
+	nus.Bruk2Omega('nuslist')
+
+will convert bruker nuslist to Omega format
+
+
 ## Tract
 Scripts for analysis of <sup>15</sup>N-TRACT data. Fitting and effective correlation time (&tau;<sub>c</sub>) along with estimation of apparent molecular weight.  
 
