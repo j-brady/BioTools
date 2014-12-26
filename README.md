@@ -10,7 +10,7 @@ It is necessary to install the Numpy, MatPlotLib and BioPython for some of these
 	pip install numpy matplotlib BioPython
 ## Installation
 
-Download/clone the package from <a> git@github.com:j-brady/BioTools.git </a>. In the rootdir of the package run the setup.py script.
+Download/clone the package from <a git@github.com:j-brady/BioTools.git> </a>. In the rootdir of the package run the setup.py script.
 
 	python setup.py install
 
