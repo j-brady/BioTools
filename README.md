@@ -16,4 +16,5 @@ NMR Tools
 ## nus.py
 Scripts for converting Bruker NUS sampling schedules to Omega compatible format and vice-versa.
 
-
+## Tract
+Scripts for analysis of <sup>15</sup>N-TRACT data. Fitting and effective correlation time (&tau<sup>c</sup>) along with estimation of apparent molecular weight.  
