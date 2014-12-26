@@ -23,7 +23,7 @@ Scripts for incorporation into a Django web application
 
 NMR Tools
 =========
-
+Some scripts for dealing with NMR related data
 ## nus.py
 Scripts for converting Bruker NUS sampling schedules to Omega compatible format and vice-versa.
 
