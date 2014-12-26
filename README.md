@@ -34,4 +34,4 @@ h_field = field strength in Hz, two_eta_xy = cross-correlated relaxation rate (2
 
         mw    = Mw_from_Tauc(r_w,eta,T,tau_c,rho)
 
-r_w = hydration radius (should be between 1.6 - 3.2 &Angstrom;), eta = viscosity, tau_c= &tau;<sub>c</sub> (s), rho = 0.73e-6 m<sup>3</sup>g<sup>-1</sup>.
+r_w = hydration radius (should be between 1.6 - 3.2 &#8491;), eta = viscosity, tau_c= &tau;<sub>c</sub> (s), rho = 0.73e-6 m<sup>3</sup>g<sup>-1</sup>.
