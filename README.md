@@ -23,3 +23,12 @@ Scripts for converting Bruker NUS sampling schedules to Omega compatible format 
 
 ## Tract
 Scripts for analysis of <sup>15</sup>N-TRACT data. Fitting and effective correlation time (&tau;<sub>c</sub>) along with estimation of apparent molecular weight.  
+
+#Example usage:
+
+	from NMR_Tools.tract import tract_tauc, Mw_from_Tauc
+        
+        ''' h_field = field strength in Hz, two_eta_xy = cross-correlated relaxation rate (2&eta;<sub>xy</sub>) '''	
+	tau_c = tract_tauc.tauc(h_field,two_eta_xy)
+        ''' r_w = hydration radius (should be between 1.6 - 3.2 &Angstrom;), eta = viscosity, tau_c= &tau;<sub>c</sub> (s), rho = 0.73e-6 m<sup>3</sup>g<sup>-1</sup> '''
+        mw    = Mw_from_Tauc(r_w,eta,T,tau_c,rho)
