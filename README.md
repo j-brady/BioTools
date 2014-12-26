@@ -2,7 +2,7 @@ BioTools
 ========
 Some scripts for analysis of protein sequences
 
-	'''python 
-	def syntax(test)
+	''' 
+	def example(test)
 		return test
 	'''
