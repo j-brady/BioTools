@@ -5,6 +5,7 @@ Some scripts for analysis of protein sequences
 	def example(test)
 		return test
 ## Dependencies
+It is necessary to install the Numpy, MatPlotLib and BioPython for some of these scripts to work
 	pip install numpy matplotlib BioPython
 
 ## data_tables.py
