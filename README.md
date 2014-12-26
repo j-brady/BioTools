@@ -8,6 +8,12 @@ Some scripts for analysis of protein sequences
 It is necessary to install the Numpy, MatPlotLib and BioPython for some of these scripts to work.
 
 	pip install numpy matplotlib BioPython
+## Installation
+
+Download/clone the package from git@github.com:j-brady/BioTools.git. In the rootdir of the package run the setup.py script.
+
+	python setup.py install
+
 
 ## data_tables.py
 Contains hydropathy tables.
