@@ -14,6 +14,9 @@ Download/clone the package. In the rootdir of the package run the setup.py scrip
 
 	python setup.py install
 
+Or 
+
+	pip install BioTools
 
 ## data_tables.py
 Contains hydropathy tables.
